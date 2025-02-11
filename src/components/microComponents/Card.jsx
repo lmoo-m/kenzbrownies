@@ -1,15 +1,16 @@
 import React from "react";
-import product from "../../assets/product.jpg";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
 import Button from "./Button";
 
-const Card = () => {
+const directWa = "https://wa.me/6289697984990/?text=Saya ingin memesan";
+
+const Card = ({ img, title, price }) => {
   return (
-    <section className="bg-white w-[90%] p-5 rounded-md">
-      <img src={product} className="w-[100%] rounded-md" />
+    <section className="bg-[var(--card)] w-[90%] p-5 rounded-md">
+      <img src={img} className="w-[100%] rounded-md" />
       <section className="text-yellow-500 my-4">
-        <Heading>Product</Heading>
+        <Heading>{title}</Heading>
         <Paragraph>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
           laborum tempora tenetur! Eaque accusamus labore rem, nihil facere quae
@@ -17,7 +18,9 @@ const Card = () => {
           pariatur nostrum molestiae?
         </Paragraph>
       </section>
-      <Button>500000</Button>
+      <a href={`${directWa} ${title}`}>
+        <Button>{price}</Button>
+      </a>
     </section>
   );
 };

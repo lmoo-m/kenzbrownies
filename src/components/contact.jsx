@@ -5,7 +5,7 @@ import { FaMapMarker } from "react-icons/fa";
 import Button from "./microComponents/Button";
 
 const url = {
-  wa: "https://wa.me/6282322351895",
+  wa: "https://wa.me/6289697984990",
   ig: "https://www.instagram.com/kenz11_brownies/",
   map: "",
 };
@@ -19,7 +19,7 @@ const Contact = () => {
   const text = `halo kak, saya ${form.name}, ingin memesan ${form.msg}`;
 
   return (
-    <section className=" py-[3rem]">
+    <section id="contact" className=" py-[3rem]">
       <section className="flex w-full items-center flex-col">
         <section className="px-5 w-full">
           <Heading className={"mb-2"}>Menu Custom</Heading>
@@ -28,7 +28,7 @@ const Contact = () => {
             onChange={(e) =>
               setForm((current) => ({ ...current, name: e.target.value }))
             }
-            className="border w-full h-[3rem] px-2 rounded-md"
+            className="border bg-[var(--card)] w-full h-[3rem] px-2 rounded-md"
           />
           <textarea
             onChange={(e) =>
@@ -36,7 +36,7 @@ const Contact = () => {
             }
             placeholder="pesan..."
             value={form.msg}
-            className="border w-full h-[15rem] p-2 rounded-md my-3"
+            className="border bg-[var(--card)] w-full h-[15rem] p-2 rounded-md my-3"
           />
           <a href={`${url.wa}/?text=${text}`}>
             <Button>Pesan Sekarang</Button>

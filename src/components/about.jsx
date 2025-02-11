@@ -1,19 +1,28 @@
 import React from "react";
 import Heading from "./microComponents/Heading";
-import product from "../assets/product.jpg";
+import icon from "../assets/icon.jpeg";
 import Paragraph from "./microComponents/Paragraph";
 
 const About = () => {
   return (
-    <section id="about" className="h-screen flex justify-center items-center">
-      <section className="px-5">
+    <section id="about" className="min-h-min flex justify-center">
+      <section className="px-5 py-10">
         <Heading className={"text-center mb-5"}>Tentang Kami</Heading>
-        <img src={product} className="aspect-video rounded-md " />
+        <img src={icon} className="aspect-square rounded-md " />
         <Paragraph className={"mt-6"}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          corporis enim nemo mollitia sequi quo quae nobis excepturi
-          reprehenderit deleniti deserunt, praesentium eveniet odit quis ratione
-          assumenda necessitatibus iure maiores.
+          Sejak 2022, Kenz11_Brownies hadir untuk menghadirkan brownies premium
+          dengan rasa yang otentik dan kualitas terbaik. Kami percaya bahwa
+          setiap gigitan brownies bisa membawa kebahagiaan, itulah mengapa kami
+          selalu menggunakan bahan berkualitas tinggi dan proses pembuatan yang
+          penuh perhatian. <br /> <br />✨ Mengapa Kenz11_Brownies? <br />✔
+          Homemade & Freshly Baked – Dipanggang setiap hari untuk rasa yang
+          selalu fresh <br />
+          🍫 Bahan Premium – Menggunakan cokelat asli untuk tekstur lembut dan
+          rasa yang kaya <br /> 💖 100% Halal & Tanpa Pengawet – Aman untuk
+          dikonsumsi semua orang <br /> <br />
+          Dengan cinta dan dedikasi, kami ingin menghadirkan brownies yang tidak
+          hanya lezat, tetapi juga membawa kebahagiaan dalam setiap potongan.
+          Terima kasih telah menjadi bagian dari perjalanan manis kami! 🍩✨
         </Paragraph>
       </section>
     </section>
