@@ -7,7 +7,10 @@ const directWa = "https://wa.me/6289697984990/?text=Saya ingin memesan";
 
 const Card = ({ img, title, price }) => {
   return (
-    <section className="bg-[var(--card)] w-[90%] p-5 rounded-md">
+    <section
+      data-aos="fade-up-right"
+      className="bg-[var(--card)] w-[90%] p-5 rounded-md"
+    >
       <img src={img} className="w-[100%] rounded-md" />
       <section className="text-yellow-500 my-4">
         <Heading>{title}</Heading>

@@ -7,10 +7,13 @@ const Menu = () => {
   return (
     <section id="menu" className="min-h-min flex justify-center py-10">
       <section className="flex items-center flex-col">
-        <Heading className={"mb-10"}>Menu Kami</Heading>
+        <Heading data-aos="fade-in" className={"mb-10"}>
+          Menu Kami
+        </Heading>
         <section className="flex items-center gap-5 flex-col">
           {products.map((product, i) => (
             <Card
+              key={i}
               img={product.img}
               title={product.title}
               price={product.price}
