@@ -16,7 +16,7 @@ const Contact = () => {
     msg: "ingin memesan",
   });
 
-  const text = `halo kak, saya ${form.name}, ingin memesan ${form.msg}`;
+  const text = `halo kak, saya ${form.name}, ${form.msg}`;
 
   return (
     <section id="contact" className=" py-[3rem]">

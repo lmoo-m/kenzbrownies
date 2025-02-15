@@ -14,12 +14,12 @@ const Card = ({ img, title, price }) => {
       <img src={img} className="w-[100%] rounded-md" />
       <section className="text-yellow-500 my-4">
         <Heading>{title}</Heading>
-        <Paragraph>
+        {/* <Paragraph>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
           laborum tempora tenetur! Eaque accusamus labore rem, nihil facere quae
           quasi odit cupiditate voluptatem! Distinctio voluptatem veritatis fuga
           pariatur nostrum molestiae?
-        </Paragraph>
+        </Paragraph> */}
       </section>
       <a href={`${directWa} ${title}`}>
         <Button>{price}</Button>
