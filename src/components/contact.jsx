@@ -7,7 +7,7 @@ import Button from "./microComponents/Button";
 const url = {
   wa: "https://wa.me/6289697984990",
   ig: "https://www.instagram.com/kenz11_brownies/",
-  map: "",
+  map: "https://www.google.com/maps/place/6%C2%B012'55.0%22S+106%C2%B041'35.3%22E/@-6.215279,106.69056,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-6.215279!4d106.6931349?hl=id&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D",
 };
 
 const Contact = () => {
@@ -63,7 +63,11 @@ const Contact = () => {
             >
               <IoLogoInstagram />
             </a>
-            <a target="_blank" className="border text-2xl block p-3 rounded-xl">
+            <a
+              href={url.map}
+              target="_blank"
+              className="border text-2xl block p-3 rounded-xl"
+            >
               <FaMapMarker />
             </a>
           </section>
